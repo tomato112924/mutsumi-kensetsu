@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>有限会社睦建設 | 静岡県沼津市の土木・外構・造成工事</title>
+  <meta name="description" content="有限会社睦建設は、静岡県全域・神奈川県西部で公共土木工事・外構・造成工事を手掛ける専門会社です。創業1978年。">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+img{display:block;width:100%;height:100%;object-fit:cover}
+
+:root{
+  --ink:#0f0d0a;--paper:#f5f2eb;--cream:#faf8f3;
+  --soil:#2c1e0f;--earth:#6b4c2a;--rust:#8c3a1a;
+  --sand:#bf8c45;--moss:#1e3220;--lt:#e8e4d8;
+  --red:#c0291a;
+}
+
+body{font-family:'Noto Sans JP',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden;font-size:14px;line-height:1.7}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;background:rgba(245,242,235,0.98);backdrop-filter:blur(12px);border-bottom:2px solid var(--red)}
+.nav-in{max-width:1280px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo-wrap{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.logo-mark-img{width:42px;height:42px;object-fit:contain;flex-shrink:0}
+.logo-text{font-family:'Shippori Mincho B1',serif;font-size:16px;font-weight:700;color:var(--soil);letter-spacing:0.04em;line-height:1.25}
+.logo-text small{display:block;font-size:9px;font-family:'Noto Sans JP',sans-serif;font-weight:400;color:var(--earth);letter-spacing:0.18em;margin-top:1px}
+.nav-links{list-style:none;display:flex}
+.nav-links a{display:block;padding:0 10px;font-size:11px;font-weight:500;letter-spacing:0.08em;color:var(--soil);text-decoration:none;line-height:64px;opacity:0.55;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.nav-tel{font-family:'Shippori Mincho B1',serif;font-size:16px;font-weight:700;color:var(--red);letter-spacing:0.04em;text-align:right;flex-shrink:0}
+.nav-tel small{display:block;font-size:9px;font-family:'Noto Sans JP',sans-serif;font-weight:400;color:var(--earth);letter-spacing:0.15em}
+
+/* HERO */
+.hero{height:100vh;min-height:640px;padding-top:64px;display:grid;grid-template-columns:55% 45%;overflow:hidden}
+.hero-l{position:relative;overflow:hidden}
+.hero-l img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.45)}
+.hero-copy{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:56px 56px 64px;background:linear-gradient(to top,rgba(20,12,4,0.95) 0%,rgba(20,12,4,0.3) 50%,transparent 100%)}
+.hero-label{font-size:10px;letter-spacing:0.32em;color:var(--sand);margin-bottom:20px;display:flex;align-items:center;gap:10px;font-weight:500}
+.hero-label::before{content:'';width:28px;height:1px;background:var(--sand)}
+h1{font-family:'Shippori Mincho B1',serif;font-size:48px;font-weight:800;line-height:1.22;color:#fff;margin-bottom:24px;letter-spacing:0.01em;text-shadow:0 2px 12px rgba(0,0,0,0.5)}
+h1 em{font-style:normal;color:var(--sand)}
+.hero-desc{font-size:13px;line-height:2.1;color:rgba(255,255,255,0.82);max-width:340px;margin-bottom:40px;font-weight:400;text-shadow:0 1px 4px rgba(0,0,0,0.6)}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-p{display:inline-flex;align-items:center;gap:6px;padding:14px 30px;background:var(--red);color:#fff;font-size:12px;font-weight:700;letter-spacing:0.12em;text-decoration:none;transition:background .2s;white-space:nowrap}
+.btn-p:hover{background:#a02214}
+.btn-s{display:inline-flex;align-items:center;gap:6px;padding:14px 24px;border:1.5px solid rgba(255,255,255,0.5);color:#fff;font-size:12px;font-weight:500;letter-spacing:0.12em;text-decoration:none;transition:border-color .2s,background .2s;white-space:nowrap}
+.btn-s:hover{border-color:#fff;background:rgba(255,255,255,0.1)}
+.hero-r{display:grid;grid-template-rows:1fr 1fr;background:var(--cream)}
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;border-left:2px solid var(--red)}
+.stat{padding:24px 24px 20px;border-bottom:1px solid rgba(44,30,15,0.1);border-right:1px solid rgba(44,30,15,0.1)}
+.stat:nth-child(even){border-right:0}
+.stat-n{font-family:'Shippori Mincho B1',serif;font-size:34px;font-weight:800;color:var(--soil);line-height:1;margin-bottom:6px;white-space:nowrap}
+.stat-n sup{font-size:14px;font-weight:600;vertical-align:super}
+.stat-l{font-size:11px;font-weight:500;letter-spacing:0.1em;color:var(--earth)}
+.hero-img2{border-left:2px solid var(--red);border-top:1px solid rgba(44,30,15,0.1);overflow:hidden;position:relative}
+.hero-img2 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+
+/* TICKER */
+.ticker{background:var(--red);padding:12px 0;overflow:hidden}
+.ticker-track{display:flex;animation:scroll 24s linear infinite;width:max-content}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tick-item{display:flex;align-items:center;gap:10px;padding:0 32px;font-size:10px;font-weight:500;letter-spacing:0.2em;color:rgba(255,255,255,0.75);white-space:nowrap;border-right:1px solid rgba(255,255,255,0.2)}
+.tick-item b{color:#fff;font-weight:700}
+
+/* UTILS */
+.w{max-width:1280px;margin:0 auto;padding:0 36px}
+.sec-hd{display:flex;align-items:center;gap:16px;margin-bottom:52px}
+.sec-en{font-size:9px;font-weight:700;letter-spacing:0.35em;color:var(--red);white-space:nowrap}
+.sec-rule{flex:1;height:1px;background:rgba(44,30,15,0.12)}
+.sec-jp{font-family:'Shippori Mincho B1',serif;font-size:28px;font-weight:700;color:var(--soil)}
+section{padding:80px 0}
+
+/* ABOUT */
+.about-wrap{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(44,30,15,0.12);overflow:hidden}
+.about-img-wrap{position:relative;aspect-ratio:1/1;overflow:hidden}
+.about-img-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.about-txt{padding:52px 48px;border-left:1px solid rgba(44,30,15,0.12);display:flex;flex-direction:column;justify-content:space-between;background:var(--cream)}
+.about-lead{font-family:'Shippori Mincho B1',serif;font-size:22px;font-weight:700;color:var(--soil);line-height:1.6;margin-bottom:20px}
+.about-body{font-size:13px;line-height:2.3;color:var(--soil);opacity:0.72;margin-bottom:32px}
+.about-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(44,30,15,0.12);border:1px solid rgba(44,30,15,0.12)}
+.an{background:var(--paper);padding:16px 12px}
+.an-n{font-family:'Shippori Mincho B1',serif;font-size:19px;font-weight:800;color:var(--soil);display:block;line-height:1;margin-bottom:4px;white-space:nowrap}
+.an-l{font-size:10px;font-weight:500;letter-spacing:0.12em;color:var(--earth)}
+
+/* WORKS */
+#works{background:var(--lt);padding:80px 0}
+.works-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:260px 260px;gap:3px}
+.wk{position:relative;overflow:hidden;cursor:pointer;background:var(--soil)}
+.wk img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .55s,filter .55s;filter:brightness(0.78)}
+.wk:hover img{transform:scale(1.06);filter:brightness(0.6)}
+.wk-info{position:absolute;bottom:0;left:0;right:0;padding:40px 20px 20px;background:linear-gradient(to top,rgba(15,10,3,0.85),transparent);transform:translateY(6px);opacity:0;transition:opacity .3s,transform .3s}
+.wk:hover .wk-info{opacity:1;transform:translateY(0)}
+.wk-info span{font-size:12px;font-weight:500;color:#fff;letter-spacing:0.12em}
+.wk-big{grid-column:1/2;grid-row:1/3}
+.wk-cta{grid-column:3/4;grid-row:2/3;background:var(--red);display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:24px 22px}
+.wk-cta p{font-size:9px;font-weight:700;letter-spacing:0.25em;color:rgba(255,255,255,0.5);margin-bottom:10px}
+.wk-cta a{font-size:13px;font-weight:500;color:#fff;letter-spacing:0.08em;text-decoration:none}
+
+/* SERVICES */
+#services{background:var(--soil)}
+#services .sec-en{color:rgba(255,255,255,0.4)}
+#services .sec-rule{background:rgba(255,255,255,0.1)}
+#services .sec-jp{color:#fff}
+.sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.08)}
+.sv{background:var(--soil);padding:44px 36px;transition:background .2s}
+.sv:hover{background:#3a2710}
+.sv-no{font-family:'Shippori Mincho B1',serif;font-size:56px;font-weight:800;color:rgba(192,41,26,0.22);line-height:1;margin-bottom:20px;display:block}
+.sv-t{font-family:'Shippori Mincho B1',serif;font-size:18px;font-weight:700;color:#fff;margin-bottom:14px}
+.sv-d{font-size:13px;line-height:2.1;color:rgba(255,255,255,0.68)}
+.sv-list{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);list-style:none}
+.sv-list li{font-size:11px;color:rgba(255,255,255,0.55);padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;gap:8px}
+.sv-list li::before{content:'—';color:var(--red);font-size:10px}
+
+/* VIDEO */
+#video{background:var(--ink);padding:80px 0}
+#video .sec-en{color:rgba(255,255,255,0.35)}
+#video .sec-rule{background:rgba(255,255,255,0.08)}
+#video .sec-jp{color:#fff}
+.video-wrap{display:grid;grid-template-columns:1fr 1fr;gap:3px;align-items:stretch}
+.video-thumb{position:relative;overflow:hidden;aspect-ratio:16/9;background:#000;cursor:pointer;display:block;text-decoration:none}
+.video-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s,filter .5s;filter:brightness(0.65)}
+.video-thumb:hover img{transform:scale(1.04);filter:brightness(0.45)}
+.play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;background:rgba(192,41,26,0.9);display:flex;align-items:center;justify-content:center;transition:transform .2s,background .2s}
+.video-thumb:hover .play-btn{transform:translate(-50%,-50%) scale(1.12);background:var(--red)}
+.play-btn svg{width:24px;height:24px;margin-left:5px}
+.video-badge{position:absolute;bottom:20px;left:20px;font-size:11px;font-weight:500;letter-spacing:0.12em;color:#fff;background:rgba(0,0,0,0.55);padding:6px 14px;backdrop-filter:blur(4px)}
+.video-txt{padding:52px 48px;background:var(--soil);display:flex;flex-direction:column;justify-content:center}
+.video-label{font-size:9px;font-weight:700;letter-spacing:0.3em;color:var(--red);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.video-label::before{content:'';width:20px;height:1px;background:var(--red)}
+.video-h{font-family:'Shippori Mincho B1',serif;font-size:24px;font-weight:700;color:#fff;line-height:1.5;margin-bottom:18px}
+.video-d{font-size:13px;line-height:2.2;color:rgba(255,255,255,0.68);margin-bottom:28px}
+.video-link{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;background:var(--red);color:#fff;font-size:12px;font-weight:700;letter-spacing:0.1em;text-decoration:none;width:fit-content;transition:background .2s}
+.video-link:hover{background:#a02214}
+
+/* DAY FLOW */
+#flow{background:var(--cream);padding:80px 0}
+.flow-intro{max-width:580px;margin-bottom:52px}
+.flow-intro p{font-size:13px;line-height:2.1;color:var(--soil);opacity:0.7;margin-top:10px}
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(44,30,15,0.1)}
+.fc{background:#fff;padding:30px 26px 40px;position:relative;border-top:3px solid rgba(44,30,15,0.1);transition:border-color .2s,box-shadow .2s}
+.fc:hover{border-top-color:rgba(44,30,15,0.3);box-shadow:0 2px 12px rgba(44,30,15,0.08)}
+.fc-work{border-top-color:var(--red)}
+.fc-work:hover{border-top-color:var(--red)}
+.fc-badge{display:inline-flex;align-items:baseline;gap:4px;padding:5px 12px;margin-bottom:20px;background:var(--soil)}
+.fc-work .fc-badge{background:var(--red)}
+.fc-time{font-family:'Shippori Mincho B1',serif;font-size:18px;font-weight:700;color:#fff;line-height:1}
+.fc-ampm{font-size:9px;font-weight:700;color:rgba(255,255,255,0.7);letter-spacing:0.15em}
+.fc-title{font-family:'Shippori Mincho B1',serif;font-size:15px;font-weight:700;color:var(--soil);margin-bottom:12px;line-height:1.4}
+.fc-desc{font-size:12px;line-height:2;color:var(--soil);opacity:0.65}
+.fc-tag{position:absolute;bottom:16px;right:18px;font-size:8px;font-weight:700;letter-spacing:0.2em;color:rgba(44,30,15,0.2)}
+.fc-work .fc-tag{color:rgba(192,41,26,0.3)}
+
+/* VEHICLES */
+#vehicles{background:var(--lt);padding:80px 0}
+.veh-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+.veh{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--ink)}
+.veh img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.8;transition:opacity .3s,transform .55s}
+.veh:hover img{opacity:1;transform:scale(1.05)}
+.veh-lbl{position:absolute;bottom:0;left:0;right:0;padding:24px 16px 14px;background:linear-gradient(to top,rgba(15,13,10,0.82),transparent);font-size:11px;font-weight:500;color:#fff;letter-spacing:0.12em}
+
+/* RECRUIT */
+#recruit{padding:0}
+.recruit-wrap{display:grid;grid-template-columns:1fr 1fr;min-height:500px}
+.recruit-img{position:relative;overflow:hidden}
+.recruit-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.recruit-body{background:var(--moss);padding:72px 56px;display:flex;flex-direction:column;justify-content:center}
+.recruit-tag{font-size:9px;font-weight:700;letter-spacing:0.32em;color:rgba(255,255,255,0.4);margin-bottom:14px}
+.recruit-h{font-family:'Shippori Mincho B1',serif;font-size:30px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:20px}
+.recruit-p{font-size:13px;line-height:2.2;color:rgba(255,255,255,0.72);margin-bottom:32px}
+.recruit-pts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.1);margin-bottom:36px}
+.rp{background:rgba(30,50,32,0.6);padding:18px 20px}
+.rp-n{font-family:'Shippori Mincho B1',serif;font-size:20px;font-weight:700;color:#fff;display:block;margin-bottom:2px}
+.rp-l{font-size:10px;font-weight:500;letter-spacing:0.12em;color:rgba(255,255,255,0.45)}
+
+/* NEWS */
+#news{background:var(--paper);padding:80px 0}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(44,30,15,0.1);border:1px solid rgba(44,30,15,0.1)}
+.ni{background:var(--paper);padding:32px 28px;cursor:pointer;border-top:3px solid transparent;transition:border-color .2s,background .2s}
+.ni:hover{background:var(--cream);border-top-color:var(--red)}
+.ni-date{font-size:10px;font-weight:500;letter-spacing:0.18em;color:var(--red);margin-bottom:10px}
+.ni-t{font-size:14px;font-weight:700;color:var(--soil);line-height:1.6;margin-bottom:10px}
+.ni-d{font-size:12px;color:var(--soil);opacity:0.6;line-height:1.85}
+
+/* INFO */
+#info{background:var(--soil);padding:80px 0}
+#info .sec-jp{color:#fff}
+#info .sec-en{color:rgba(255,255,255,0.3)}
+#info .sec-rule{background:rgba(255,255,255,0.08)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(255,255,255,0.07)}
+.info-tbl{background:rgba(255,255,255,0.03);padding:40px 40px}
+.tbl-lbl{font-size:9px;font-weight:700;letter-spacing:0.28em;color:rgba(255,255,255,0.35);margin-bottom:24px}
+table{width:100%;border-collapse:collapse}
+tr{border-bottom:1px solid rgba(255,255,255,0.08)}
+th{padding:14px 0;font-size:11px;font-weight:500;letter-spacing:0.08em;color:rgba(255,255,255,0.45);text-align:left;width:36%;vertical-align:top}
+td{padding:14px 0;font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7}
+.info-contact{background:rgba(0,0,0,0.3);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px;gap:16px}
+.ic-addr{font-size:12px;color:rgba(255,255,255,0.5);text-align:center;line-height:2;letter-spacing:0.04em}
+.ic-tel{font-family:'Shippori Mincho B1',serif;font-size:32px;font-weight:700;color:#fff;letter-spacing:0.06em}
+.ic-sub{font-size:10px;font-weight:500;letter-spacing:0.18em;color:rgba(255,255,255,0.35)}
+.ic-map{display:inline-flex;align-items:center;gap:6px;padding:11px 24px;border:1px solid rgba(192,41,26,0.4);color:var(--sand);font-size:11px;font-weight:500;letter-spacing:0.1em;text-decoration:none;margin-top:8px;transition:border-color .2s,background .2s}
+.ic-map:hover{border-color:var(--sand);background:rgba(191,140,69,0.08)}
+
+/* CTA / FOOTER */
+.cta-strip{background:var(--red);padding:56px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cta-strip h3{font-family:'Shippori Mincho B1',serif;font-size:26px;font-weight:700;color:#fff;margin-bottom:8px}
+.cta-strip p{font-size:12px;color:rgba(255,255,255,0.75)}
+.cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-w{display:inline-flex;align-items:center;gap:6px;padding:14px 30px;background:#fff;color:var(--red);font-size:12px;font-weight:700;letter-spacing:0.12em;text-decoration:none;transition:background .2s;white-space:nowrap}
+.btn-w:hover{background:rgba(255,255,255,0.88)}
+.btn-s2{display:inline-flex;align-items:center;padding:14px 24px;border:1.5px solid rgba(255,255,255,0.4);color:#fff;font-size:12px;font-weight:500;letter-spacing:0.12em;text-decoration:none;transition:border-color .2s;white-space:nowrap}
+.btn-s2:hover{border-color:#fff}
+footer{background:var(--ink);padding:32px 36px}
+.foot-in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.foot-logo{display:flex;align-items:center;gap:10px}
+.foot-mark{width:28px;height:28px;object-fit:contain}
+.foot-name{font-family:'Shippori Mincho B1',serif;font-size:13px;font-weight:700;color:rgba(255,255,255,0.6)}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap}
+.foot-links a{font-size:10px;font-weight:500;color:rgba(255,255,255,0.35);text-decoration:none;letter-spacing:0.1em;transition:color .2s}
+.foot-links a:hover{color:rgba(255,255,255,0.7)}
+footer p{font-size:10px;color:rgba(255,255,255,0.2)}
+
+@keyframes fup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.hero-copy>*{animation:fup .7s ease both}
+.hero-label{animation-delay:.1s}h1{animation-delay:.2s}.hero-desc{animation-delay:.3s}.hero-btns{animation-delay:.4s}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <div class="logo-wrap">
+      <img class="logo-mark-img" src="https://www.mutsumikensetsu.com/files/sp1.gif" alt="睦建設マーク">
+      <div class="logo-text">有限会社睦建設<small>MUTSUMI KENSETSU Co., Ltd.</small></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">会社案内</a></li>
+      <li><a href="#works">施工実績</a></li>
+      <li><a href="#services">事業内容</a></li>
+      <li><a href="#video">紹介動画</a></li>
+      <li><a href="#flow">一日の流れ</a></li>
+      <li><a href="#vehicles">保有機械</a></li>
+      <li><a href="#recruit">採用情報</a></li>
+      <li><a href="#info">会社概要</a></li>
+    </ul>
+    <div class="nav-tel">055-922-5701<small>受付 8:00〜17:00（土日祝休）</small></div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-l">
+    <img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/20180322_081223-e1556156746254.jpg" alt="施工現場">
+    <div class="hero-copy">
+      <p class="hero-label">静岡県沼津市 / 創業1978年</p>
+      <h1>大地を動かす。<br>その先に、<em>地域の未来</em>がある。</h1>
+      <p class="hero-desc">有限会社睦建設は、静岡県全域・神奈川県西部で公共土木工事・外構・造成工事を手掛ける専門会社です。45年以上の実績と、どこにも負けないチームワークで地域を支えます。</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-p">お問い合わせ</a>
+        <a href="#works" class="btn-s">施工実績を見る →</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-r">
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-n">45<sup>年+</sup></div><div class="stat-l">建設業の実績</div></div>
+      <div class="stat"><div class="stat-n">10<sup>名</sup></div><div class="stat-l">熟練した職人</div></div>
+      <div class="stat"><div class="stat-n" style="font-size:15px;line-height:1.6">静岡県全域<br>神奈川県西部</div><div class="stat-l">対応エリア</div></div>
+      <div class="stat" style="border-bottom:0"><div class="stat-n">公共</div><div class="stat-l">工事対応</div></div>
+    </div>
+    <div class="hero-img2">
+      <img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/20180625_092019-e1555670734855.jpg" alt="施工現場2">
+    </div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="tick-item"><b>一般土木工事</b></span><span class="tick-item">外構・エクステリア工事</span><span class="tick-item"><b>造成工事</b></span><span class="tick-item">公共工事対応</span><span class="tick-item"><b>建設業許可 #20724</b></span><span class="tick-item">静岡県全域・神奈川県西部</span><span class="tick-item"><b>創業1978年</b></span><span class="tick-item">従業員10名</span>
+    <span class="tick-item"><b>一般土木工事</b></span><span class="tick-item">外構・エクステリア工事</span><span class="tick-item"><b>造成工事</b></span><span class="tick-item">公共工事対応</span><span class="tick-item"><b>建設業許可 #20724</b></span><span class="tick-item">静岡県全域・神奈川県西部</span><span class="tick-item"><b>創業1978年</b></span><span class="tick-item">従業員10名</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="w">
+    <div class="sec-hd"><span class="sec-en">ABOUT</span><div class="sec-rule"></div><span class="sec-jp">会社案内</span></div>
+    <div class="about-wrap">
+      <div class="about-img-wrap"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/IMG_5611.jpg" alt="代表"></div>
+      <div class="about-txt">
+        <div>
+          <p class="about-lead">昭和53年の創立から、信頼を積み上げてきた土木のプロ集団です。</p>
+          <p class="about-body">有限会社睦建設は、静岡県沼津市を拠点に、公共土木工事・外構・エクステリア・造成工事を手掛けてきた専門会社です。長年培った技術とノウハウを生かし、静岡県全域・神奈川県西部へと活動範囲を広げています。<br><br>高い技術力を誇り、数多くの施工実績を残し表彰を受けてきました。確かな技術力とどこにも負けないチームワークで、これからも地域の基盤づくりに貢献してまいります。</p>
+        </div>
+        <div class="about-nums">
+          <div class="an"><span class="an-n">1978年</span><span class="an-l">創立</span></div>
+          <div class="an"><span class="an-n">10名</span><span class="an-l">従業員数</span></div>
+          <div class="an"><span class="an-n">500万円</span><span class="an-l">資本金</span></div>
+          <div class="an"><span class="an-n">42歳</span><span class="an-l">平均年齢</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="w">
+    <div class="sec-hd"><span class="sec-en">WORKS</span><div class="sec-rule"></div><span class="sec-jp">施工実績</span></div>
+    <div class="works-grid">
+      <div class="wk wk-big"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/20180322_081223-e1556156746254.jpg" alt="土木工事"><div class="wk-info"><span>一般土木工事 ／ 静岡県内</span></div></div>
+      <div class="wk"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/20151031_143832-e1555670796252.jpg" alt="工事"><div class="wk-info"><span>公共工事</span></div></div>
+      <div class="wk"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/DVC00057-e1555671041901.jpg" alt="重機"><div class="wk-info"><span>重機作業</span></div></div>
+      <div class="wk"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/20170927_105126-e1555670349805.jpg" alt="施工"><div class="wk-info"><span>施工現場</span></div></div>
+      <div class="wk"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/20180625_092019-e1555670734855.jpg" alt="外構"><div class="wk-info"><span>外構・造成工事</span></div></div>
+      <div class="wk-cta"><p>WORKS</p><a href="#">施工実績をすべて見る →</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="w">
+    <div class="sec-hd"><span class="sec-en">SERVICES</span><div class="sec-rule"></div><span class="sec-jp">事業内容</span></div>
+    <div class="sv-grid">
+      <div class="sv"><span class="sv-no">01</span><div class="sv-t">一般土木工事</div><p class="sv-d">道路・河川・宅地造成など、公共・民間を問わず幅広い土木工事に対応。長年の実績で培った確かな施工力を提供します。</p><ul class="sv-list"><li>道路工事</li><li>河川工事</li><li>擁壁工事</li><li>公共工事全般</li></ul></div>
+      <div class="sv"><span class="sv-no">02</span><div class="sv-t">外構・エクステリア工事</div><p class="sv-d">門まわり・駐車場・フェンス・ブロック積みなど、住宅・施設の外構全般に対応。機能と美観を両立した施工を行います。</p><ul class="sv-list"><li>駐車場工事</li><li>ブロック・フェンス</li><li>門扉・アプローチ</li><li>緑化工事</li></ul></div>
+      <div class="sv"><span class="sv-no">03</span><div class="sv-t">造成工事</div><p class="sv-d">宅地・産業用地の造成から切土・盛土・擁壁工事まで。重機を駆使した高精度な施工で、安全な地盤を整えます。</p><ul class="sv-list"><li>切土・盛土</li><li>宅地造成</li><li>産業用地整備</li><li>残土処理</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <div class="w">
+    <div class="sec-hd"><span class="sec-en">MOVIE</span><div class="sec-rule"></div><span class="sec-jp">紹介動画</span></div>
+    <div class="video-wrap">
+      <a class="video-thumb" href="https://youtu.be/VICOLNug4oE" target="_blank" rel="noopener">
+        <img src="https://img.youtube.com/vi/VICOLNug4oE/maxresdefault.jpg" alt="睦建設 紹介動画">
+        <div class="play-btn"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></div>
+        <div class="video-badge">クリックして YouTube で再生</div>
+      </a>
+      <div class="video-txt">
+        <div class="video-label">COMPANY MOVIE</div>
+        <div class="video-h">現場の息吹を、<br>動画でご覧ください。</div>
+        <p class="video-d">有限会社睦建設の現場の様子や働く職人たちの姿を動画でご紹介しています。土木工事の現場感、チームの雰囲気、私たちが大切にしていることをぜひご覧ください。</p>
+        <a href="https://youtu.be/VICOLNug4oE" target="_blank" rel="noopener" class="video-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          動画を再生する
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="w">
+    <div class="sec-hd"><span class="sec-en">A DAY IN THE LIFE</span><div class="sec-rule"></div><span class="sec-jp">一日の仕事の流れ</span></div>
+    <div class="flow-intro">
+      <p>朝の朝礼から現場施工・後片付けまで、チームで連携しながら一日を動かします。未経験の方にも働くイメージを持っていただけるよう紹介します。</p>
+    </div>
+    <div class="flow-grid">
+      <div class="fc">
+        <div class="fc-badge"><span class="fc-time">7:30</span><span class="fc-ampm">AM</span></div>
+        <div class="fc-title">出社・朝礼・安全確認</div>
+        <p class="fc-desc">全員が集合し、当日の作業内容・担当現場・安全注意事項を共有。ヘルメット・安全帯など保護具の確認も行います。</p>
+        <span class="fc-tag">MORNING</span>
+      </div>
+      <div class="fc">
+        <div class="fc-badge"><span class="fc-time">8:00</span><span class="fc-ampm">AM</span></div>
+        <div class="fc-title">現場移動・準備</div>
+        <p class="fc-desc">車両・重機で各現場へ移動。資材搬入、仮設工事の確認、当日の施工範囲のマーキングなど段取りを整えます。</p>
+        <span class="fc-tag">SETUP</span>
+      </div>
+      <div class="fc fc-work">
+        <div class="fc-badge"><span class="fc-time">8:30</span><span class="fc-ampm">AM</span></div>
+        <div class="fc-title">午前の施工作業</div>
+        <p class="fc-desc">掘削・舗装・型枠組立・コンクリート打設など主要作業を集中して進めます。重機オペレーターと手元が連携して動きます。</p>
+        <span class="fc-tag">CORE WORK</span>
+      </div>
+      <div class="fc">
+        <div class="fc-badge"><span class="fc-time">12:00</span><span class="fc-ampm">NOON</span></div>
+        <div class="fc-title">昼休憩</div>
+        <p class="fc-desc">1時間の昼休み。現場近くで昼食をとります。午後の作業内容や安全ポイントの確認もこの時間に行います。</p>
+        <span class="fc-tag">BREAK</span>
+      </div>
+      <div class="fc fc-work">
+        <div class="fc-badge"><span class="fc-time">13:00</span><span class="fc-ampm">PM</span></div>
+        <div class="fc-title">午後の施工・検査</div>
+        <p class="fc-desc">引き続き施工を進めながら工程進捗・品質検査も実施。写真記録・書類対応も行います。</p>
+        <span class="fc-tag">CORE WORK</span>
+      </div>
+      <div class="fc">
+        <div class="fc-badge"><span class="fc-time">16:00</span><span class="fc-ampm">PM</span></div>
+        <div class="fc-title">片付け・清掃</div>
+        <p class="fc-desc">作業終了後は現場の片付けと周辺清掃。工具・重機の格納、安全確認を徹底してから撤収します。</p>
+        <span class="fc-tag">WRAP UP</span>
+      </div>
+      <div class="fc" style="grid-column:3/5">
+        <div class="fc-badge"><span class="fc-time">17:00</span><span class="fc-ampm">PM</span></div>
+        <div class="fc-title">帰社・日報・翌日準備</div>
+        <p class="fc-desc">事務所へ戻り、当日の作業内容を日報にまとめます。翌日の資材手配・段取りを確認してから退社。残業は月平均10〜20時間程度です。</p>
+        <span class="fc-tag">END OF DAY</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vehicles">
+  <div class="w">
+    <div class="sec-hd"><span class="sec-en">EQUIPMENT</span><div class="sec-rule"></div><span class="sec-jp">保有機械・車両</span></div>
+    <div class="veh-grid">
+      <div class="veh"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2020/03/image1.jpeg" alt="重機"><div class="veh-lbl">ショベル系重機</div></div>
+      <div class="veh"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/10/20150723_082044.jpg" alt="ダンプ"><div class="veh-lbl">ダンプトラック</div></div>
+      <div class="veh"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/10/IMG_1406.jpg" alt="車両"><div class="veh-lbl">作業用車両</div></div>
+      <div class="veh"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/IMG_1389-e1555670906153.jpg" alt="重機2"><div class="veh-lbl">各種重機</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="recruit">
+  <div class="recruit-wrap">
+    <div class="recruit-img"><img src="https://www.mutsumikensetsu.com/60010582/wp-content/uploads/2019/04/IMG_5622-e1555667953641.jpg" alt="代表"></div>
+    <div class="recruit-body">
+      <p class="recruit-tag">RECRUIT</p>
+      <h2 class="recruit-h">一緒に、地域の<br>インフラを守ろう。</h2>
+      <p class="recruit-p">経験者・未経験者ともに歓迎。ベテランの職人に囲まれながら確かな技術を身につけられる環境です。公共工事が中心のため、安定した仕事量をお約束できます。</p>
+      <div class="recruit-pts">
+        <div class="rp"><span class="rp-n">経験不問</span><span class="rp-l">未経験歓迎</span></div>
+        <div class="rp"><span class="rp-n">安定</span><span class="rp-l">公共工事中心</span></div>
+        <div class="rp"><span class="rp-n">42歳</span><span class="rp-l">平均年齢</span></div>
+        <div class="rp"><span class="rp-n">10名</span><span class="rp-l">アットホーム</span></div>
+      </div>
+      <a href="#contact" class="btn-p" style="display:inline-flex;width:fit-content">採用に応募する →</a>
+    </div>
+  </div>
+</section>
+
+<section id="news">
+  <div class="w">
+    <div class="sec-hd"><span class="sec-en">NEWS</span><div class="sec-rule"></div><span class="sec-jp">お知らせ</span></div>
+    <div class="news-grid">
+      <div class="ni"><div class="ni-date">2021.11.20</div><div class="ni-t">朝夕はめっきり冷え込んできましたね</div><div class="ni-d">日に日に秋が深まってきましたね。年末に向け何かと忙しい日々が続きますが、安全第一で取り組んでまいります。</div></div>
+      <div class="ni"><div class="ni-date">2021.07.19</div><div class="ni-t">慰安旅行　有限会社睦建設</div><div class="ni-d">初島エクシブへ行ってきました。日々の疲れが吹っ飛ぶくらい美味しい海の幸を頂きました。晴天の初島は最高です。</div></div>
+      <div class="ni"><div class="ni-date">2020.10.07</div><div class="ni-t">一期工事が終了しました</div><div class="ni-d">無事に一期工事が完了しました。ご協力いただいた皆様、誠にありがとうございました。</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="w">
+    <div class="sec-hd"><span class="sec-en">COMPANY INFO</span><div class="sec-rule"></div><span class="sec-jp">会社概要</span></div>
+    <div class="info-grid">
+      <div class="info-tbl">
+        <div class="tbl-lbl">COMPANY PROFILE</div>
+        <table>
+          <tr><th>社名</th><td>有限会社睦建設</td></tr>
+          <tr><th>代表取締役</th><td>睦　貴浩</td></tr>
+          <tr><th>事業内容</th><td>土木工事業</td></tr>
+          <tr><th>所在地</th><td>〒410-0011 静岡県沼津市岡宮1313-21</td></tr>
+          <tr><th>TEL / FAX</th><td>055-922-5701 / 055-923-7343</td></tr>
+          <tr><th>創立</th><td>昭和53年（1978年）</td></tr>
+          <tr><th>設立</th><td>平成元年（1989年）</td></tr>
+          <tr><th>資本金</th><td>500万円</td></tr>
+          <tr><th>従業員数</th><td>10名（平均年齢42歳）</td></tr>
+          <tr><th>対応エリア</th><td>静岡県全域・神奈川県西部</td></tr>
+          <tr><th>建設業許可</th><td>第20724号</td></tr>
+        </table>
+      </div>
+      <div class="info-contact">
+        <div class="ic-addr">〒410-0011<br>静岡県沼津市岡宮1313-21</div>
+        <div class="ic-tel">055-922-5701</div>
+        <div class="ic-sub">受付 8:00〜17:00（土日祝休）</div>
+        <a href="https://goo.gl/maps/mExkocQJLHQ2" class="ic-map">Googleマップで見る →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="contact" class="cta-strip">
+  <div>
+    <h3>工事のご依頼・お見積りはお気軽に</h3>
+    <p>静岡県全域・神奈川県西部対応。土木・外構・造成に関するご相談・お見積りは無料です。</p>
+  </div>
+  <div class="cta-btns">
+    <a href="tel:0559225701" class="btn-w">055-922-5701</a>
+    <a href="#" class="btn-s2">メールで問い合わせる</a>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-logo">
+      <img class="foot-mark" src="https://www.mutsumikensetsu.com/files/sp1.gif" alt="睦建設マーク">
+      <span class="foot-name">有限会社睦建設</span>
+    </div>
+    <div class="foot-links">
+      <a href="#about">会社案内</a><a href="#works">施工実績</a><a href="#services">事業内容</a>
+      <a href="#video">紹介動画</a><a href="#flow">一日の流れ</a><a href="#recruit">採用情報</a>
+      <a href="#info">会社概要</a><a href="#contact">お問い合わせ</a>
+    </div>
+    <p>© 2024 Mutsumi Kensetsu Co., Ltd.</p>
+  </div>
+</footer>
+
+</body>
+</html>
